@@ -1,3 +1,4 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/hughlilly/pen/rWYbyy.
+A Pen created at CodePen.io. You can find this one at http://codepen.io/hughlilly/pen/eBewBw.
 
- Using flexbox + jquery, I have made a simple 2 column, fully responsive layout for any content, a fully responsive navigation using flexbox and jquery.
+ How to make Google charts play nicely in responsive mode (as in auto adjusting to window width).
+By default Google charts display nicely upon reload, but not when resizing the window. 
