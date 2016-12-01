@@ -1,3 +1,3 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/hughlilly/pen/XNzQJN.
+A Pen created at CodePen.io. You can find this one at http://codepen.io/hughlilly/pen/rWYbyy.
 
- How to change divs width with media queries. Uses "nth-child()" CSS3 selector.
+ Using flexbox + jquery, I have made a simple 2 column, fully responsive layout for any content, a fully responsive navigation using flexbox and jquery.
