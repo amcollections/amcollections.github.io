@@ -833,7 +833,7 @@ function drawChart6(){
 
 function handleQueryResponse(response) {
   var data = response.getDataTable();
-  var options = {title: 'Troopship Cargo', 'isStacked': true }
+  var options = {title: 'Troopship Cargo', 'isStacked': 'percent' }
   var chart = new google.visualization.BarChart(document.getElementById('Horse'));
   chart.draw(data, options);
 }
