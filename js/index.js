@@ -3,7 +3,8 @@ google.charts.setOnLoadCallback(drawChart1);
 google.charts.setOnLoadCallback(drawChart2);
 google.charts.setOnLoadCallback(drawChart3);
 google.charts.setOnLoadCallback(drawChart4);
-
+google.charts.setOnLoadCallback(drawChart5);
+google.charts.setOnLoadCallback(drawChart6);
 // Chart 1: Age at Death
 function drawChart1() {
   var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1PzmQ1IlplTBZiEftG7tHTAaJyA1yyoZjJGBDjCfGMtE/gviz/tq?range=A:B&headers=1&gid=0');
@@ -43,8 +44,20 @@ function handleQueryResponse(response) {
 }
 }
 
-//Chart 4: Trees of NS coll relative sizes
-function drawChart4() {
+//Chart 4 Enlistment Date WW1
+function drawChart4(){
+ var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1PzmQ1IlplTBZiEftG7tHTAaJyA1yyoZjJGBDjCfGMtE/gviz/tq?range=R:S&headers=1&gid=0');
+  query.send(handleQueryResponse);
+
+function handleQueryResponse(response) {
+  var data = response.getDataTable();
+  var options = {title: 'Enlistment Date WW1'}
+  var chart = new google.visualization.ColumnChart(document.getElementById('enlistdate'));
+  chart.draw(data, options);
+}
+}
+//Chart 5: Trees of NS coll relative sizes
+function drawChart5() {
     var data = new google.visualization.DataTable();
     data.addColumn('string', 'ID');
     data.addColumn('string', 'Parent');
@@ -813,9 +826,23 @@ function drawChart4() {
     tree.draw(data, options);
 }
 
+//chart 6: Horse
+function drawChart6(){
+ var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1PzmQ1IlplTBZiEftG7tHTAaJyA1yyoZjJGBDjCfGMtE/gviz/tq?range=U:X&headers=1&gid=0');
+  query.send(handleQueryResponse);
+
+function handleQueryResponse(response) {
+  var data = response.getDataTable();
+  var options = {title: 'Troopship Cargo', 'isStacked': true }
+  var chart = new google.visualization.BarChart(document.getElementById('Horse'));
+  chart.draw(data, options);
+}
+}
 $(window).resize(function(){
   drawChart1();
   drawChart2();
   drawChart3();
   drawChart4();
+  drawChart5();
+  drawChart6();
 });
