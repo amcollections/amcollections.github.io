@@ -3,6 +3,27 @@
   min-height: 450px;
 }
 
+/* Beta tag */
+body:after{
+  content: "beta";
+  position: fixed;
+  width: 255px;
+  height: 40px;
+  background: #EE8E4A;
+  top: 40px;
+  left: -60px;
+  text-align: center;
+  font-size: 40px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  line-height: 42px;
+  -ms-transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}
+
 /* Tablet and bigger */
 @media ( min-width: 768px ) {
     .grid-divider {
