@@ -1,21 +1,36 @@
-google.load("visualization", "1", {packages:["corechart", "treemap"]});
+google.load("visualization", "1", {packages: ["corechart", "treemap", "timeline","calendar"]});
 google.charts.setOnLoadCallback(drawChart1);
 google.charts.setOnLoadCallback(drawChart2);
 google.charts.setOnLoadCallback(drawChart3);
 google.charts.setOnLoadCallback(drawChart4);
 google.charts.setOnLoadCallback(drawChart5);
 google.charts.setOnLoadCallback(drawChart6);
+google.charts.setOnLoadCallback(drawChart7);
+google.charts.setOnLoadCallback(drawChart8);
 // Chart 1: Age at Death
 function drawChart1() {
   var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1PzmQ1IlplTBZiEftG7tHTAaJyA1yyoZjJGBDjCfGMtE/gviz/tq?range=A:B&headers=1&gid=0');
   query.send(handleQueryResponse);
 
-function handleQueryResponse(response) {
-  var data = response.getDataTable();
-  var options = {title: 'Age at Death','hAxis': {'title': 'Age (in years)'},'legend': {position: 'none'},'vAxis': {format: 'short',title: 'Deaths'}}
-  var chart = new google.visualization.ColumnChart(document.getElementById('ageAtDeath'));
-  chart.draw(data, options);
-}
+  function handleQueryResponse(response) {
+    var data = response.getDataTable();
+    var options = {
+      title: 'Age at Death',
+      'hAxis': {
+        'title': 'age',
+        ticks: [25,40,65,90]
+      },
+      'legend': {
+        position: 'none'
+      },
+      'vAxis': {
+        format: 'short',
+        title: 'deaths'
+      }
+    }
+    var chart = new google.visualization.ColumnChart(document.getElementById('ageAtDeath'));
+    chart.draw(data, options);
+  }
 }
 
 // Chart 2: Rank at Death
@@ -33,15 +48,17 @@ function handleQueryResponse(response) {
 
 // Chart 3: Collection Sizes
 function drawChart3() {
- var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1PzmQ1IlplTBZiEftG7tHTAaJyA1yyoZjJGBDjCfGMtE/gviz/tq?range=G:H&headers=1&gid=0');
+  var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1PzmQ1IlplTBZiEftG7tHTAaJyA1yyoZjJGBDjCfGMtE/gviz/tq?range=G:H&headers=1&gid=0');
   query.send(handleQueryResponse);
 
-function handleQueryResponse(response) {
-  var data = response.getDataTable();
-  var options = {title: 'Collection Sizes'}
-  var chart = new google.visualization.PieChart(document.getElementById('collSize'));
-  chart.draw(data, options);
-}
+  function handleQueryResponse(response) {
+    var data = response.getDataTable();
+    var options = {
+      title: 'Collection Sizes'
+    }
+    var chart = new google.visualization.PieChart(document.getElementById('collSize'));
+    chart.draw(data, options);
+  }
 }
 
 //Chart 4 Enlistment Date WW1
@@ -51,11 +68,17 @@ function drawChart4(){
 
 function handleQueryResponse(response) {
   var data = response.getDataTable();
-  var options = {title: 'Enlistment Date WW1'}
+  var options = {
+    title: 'Enlistment Date WW1',
+    legend: {position: 'none'},
+    vAxis: {ticks: [0,50,100]},
+    hAxis: {ticks: [new Date(1914,6,28), new Date(1916,11,28), new Date(1918,4,11)] }
+  }
   var chart = new google.visualization.ColumnChart(document.getElementById('enlistdate'));
   chart.draw(data, options);
 }
 }
+
 //Chart 5: Trees of NS coll relative sizes
 function drawChart5() {
     var data = new google.visualization.DataTable();
@@ -826,23 +849,65 @@ function drawChart5() {
     tree.draw(data, options);
 }
 
-//chart 6: Horse
+//chart 6: Horses
 function drawChart6(){
  var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1PzmQ1IlplTBZiEftG7tHTAaJyA1yyoZjJGBDjCfGMtE/gviz/tq?range=U:X&headers=1&gid=0');
   query.send(handleQueryResponse);
 
 function handleQueryResponse(response) {
   var data = response.getDataTable();
-  var options = {title: 'Troopship Cargo', 'isStacked': 'percent' }
-  var chart = new google.visualization.BarChart(document.getElementById('Horse'));
+  var options = {
+    title: 'Troopship Cargo',
+    'isStacked': 'percent',
+    legend: {position: 'right'},
+    hAxis: {ticks: []} 
+  } 
+  var chart = new google.visualization.BarChart(document.getElementById('horse'));
   chart.draw(data, options);
 }
 }
-$(window).resize(function(){
+
+//chart 7: Manuscripts Timeline
+function drawChart7(){
+ var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1PzmQ1IlplTBZiEftG7tHTAaJyA1yyoZjJGBDjCfGMtE/gviz/tq?range=Z:AC&headers=1&gid=0');
+  query.send(handleQueryResponse);
+
+function handleQueryResponse(response) {
+  var data = response.getDataTable();
+    var options = {
+      timeline: { showRowLabels: true },
+      height : 1600,
+      tooltip: {isHtml: false}
+    };
+  var chart = new google.visualization.Timeline(document.getElementById('manuscripts'));
+  chart.draw(data, options);
+}
+}
+
+
+//chart 8: Calendar
+function drawChart8(){
+ var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1PzmQ1IlplTBZiEftG7tHTAaJyA1yyoZjJGBDjCfGMtE/gviz/tq?range=AF:AG&headers=1&gid=0');
+  query.send(handleQueryResponse);
+
+function handleQueryResponse(response) {
+  var data = response.getDataTable();
+  var options = {
+    title: 'WW1 Casulties',
+    calendar: { cellSize: 8 },
+    
+  } 
+  var chart = new google.visualization.Calendar(document.getElementById('Calendar'));
+  chart.draw(data, options);
+}
+}
+$(window).resize(function() {
   drawChart1();
   drawChart2();
   drawChart3();
   drawChart4();
   drawChart5();
   drawChart6();
+  drawChart7();
+  drawChart8();
 });
