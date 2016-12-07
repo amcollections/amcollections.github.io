@@ -1,1 +1,1 @@
-# See it in action at <https://amcollections.github.io>
+<https://amcollections.github.io>
