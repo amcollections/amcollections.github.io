@@ -1,55 +1,101 @@
-<div class="container">
-<!--   header -->
-  <div class="clearfix page-header">
-      <a href="https://www.aucklandmuseum.com/collections"><img src="http://www.aucklandmuseum.com/client/img/aucklandmuseum/AM_Logo.svg" class="pull-right" style="padding-top:2%;" alt="Auckland War Memorial Museum Tāmaki Paenga Hira"></a>
-    <h1>Auckland Museum Data Insights</h1>
-    <p class="lead">Discovering the hidden stories in our data.</p>
-  </div>
-  <div class="row grid-divider">
- <!--     OC column -->
-    <div class="col-sm-6">
-      <div class="col-padding text-center">
-        <h3>Online Cenotaph</h3>
-<!--         Age at Death (column chart) -->
-        <div id="ageAtDeath" class="chart"></div>
-        <p>The age at which a sample of 100,000 New Zealand service personnel died.<br />The youngest are two 15-year-olds: <a href="http://www.aucklandmuseum.com/war-memorial/online-cenotaph/record/C21456">Thomas Dennis Burke</a> and <a href="http://www.aucklandmuseum.com/war-memorial/online-cenotaph/record/C23385">Edward Hugh Walls</a> were aboard the SS Port Hunter when it was torpedoed on the July 11, 1945.</p>
-        <p>
-<!--           view live data button -->
-          <a href="http://yasgui.org/short/S1NyLeGQl">
-            <button type="button" class="btn btn-default btn-sm">
-              <span class="glyphicon glyphicon-new-window"></span>&nbsp;View live data</button></a>
-        </p>
-        <hr />
-<!--         Enlistment date (column chart) -->
-        <div id="enlistdate" class="chart"></div>
-        <p>A sampling of enlistment dates. The second spike, just before Christmas 1916, corresponds with the introduction of conscription.</p>
-        <p>
-<!--           view live data button -->
-          <a href="http://yasgui.org/short/rkLCTlzQe">
-            <button type="button" class="btn btn-default btn-sm">
-              <span class="glyphicon glyphicon-new-window"></span>&nbsp;View live data</button></a>
-        <hr />
-<!--         Enlistment date (column chart) -->
-        <div id="horse" class="chart"></div>
-        <p>
-<!--           view live data button -->
-          <a href="LINK"><button type="button" class="btn btn-default btn-sm">
-              <span class="glyphicon glyphicon-new-window"></span>&nbsp;View live data</button></a>
-          <div id="Calendar" class="chart"></div>
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Auckland Museum Data Insights</title>
   
-    </div>
-    </div>
-<!--     CO column -->
-    <div class="col-sm-6">
-      <div class="col-padding text-center">
-        <h3>Collections Online</h3>
-        <div id="collSize" class="chart"></div>
-        <hr />
-        <div id="trees" class="chart"></div>
-        <hr />
-        <div id="manuscripts" class="chart"></div>
-        <hr />
-      </div>
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container">
+  <!--   header -->
+  <div class="row header">
+    <div class="col-sm-12 clearfix page-header">
+      <a href="https://www.aucklandmuseum.com/collections"><img src="http://www.aucklandmuseum.com/client/img/aucklandmuseum/AM_Logo.svg" class="pull-right" style="padding-top:2%;" alt="Auckland War Memorial Museum Tāmaki Paenga Hira"></a>
+      <h1 style="font-weight:600;">Auckland Museum Data Insights</h1>
+      <p class="lead">Discovering the stories hidden in our data.</p>
     </div>
   </div>
 </div>
+<div class="container-fluid">
+      <div class="center">
+
+<div class="row grid-divider columns">
+    <!--     OC column -->
+    <div class="col-md-6">
+      <div class="col-padding text-center">
+        <h3>Online Cenotaph</h3>
+        <!--         Age at Death (column chart) -->
+        <div id="ageAtDeath" class="chart"></div>
+        <p class="pc">The age at which a sample of 100,000 New Zealand service personnel died.</p> <p class="pc">The youngest are two 15-year-olds: <a href="http://www.aucklandmuseum.com/war-memorial/online-cenotaph/record/C21456">Thomas Dennis Burke</a> and <a href="http://www.aucklandmuseum.com/war-memorial/online-cenotaph/record/C23385">Edward Hugh Walls</a>          were aboard the SS Port Hunter when it was torpedoed on the July 11, 1945.</p><br />
+        <!--           view live data button -->
+        <p>
+          <a href="http://yasgui.org/short/S1NyLeGQl">
+            <button type="button" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-new-window"></span>&nbsp;View live data</button></a>
+        </p>
+        <hr />
+        <!--         Enlistment date (column chart) -->
+        <div id="enlistdate" class="chart"></div>
+        <p class="pc">A sampling of enlistment dates.</p> <p class="pc">The second spike, just before Christmas 1916, corresponds with the introduction of conscription.</p><br />
+        <!--           view live data button -->
+        <p>
+          <a href="http://yasgui.org/short/rkLCTlzQe">
+            <button type="button" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-new-window"></span>&nbsp;View live data</button></a>
+        </p>
+        <hr />
+        <!--        Man v. horse (stacked horizontal bar chart) -->
+        <div id="cargo" class="chart" style="width:84%; margin-left: 8%; margin-right: 8%; height:400px"></div>
+        <p class="pc">During the First World War, 10,000 horses were transported from New Zealand.</p> <p class="pc">Using data from Cenotaph we can see that approximately 30 per cent of all trooship cargo was of the equine variety.</p><br />
+        <!--           view live data button -->
+        <p>
+          <a href="http://yasgui.org/short/BknXjmG7l"><button type="button" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-new-window"></span>&nbsp;View live data</button></a></p>
+      </div>
+    </div>
+    <!--     CO column -->
+    <div class="col-md-6">
+      <div class="col-padding text-center">
+        <!--         Manuscripts timeline  -->
+        <h3>Collections Online</h3>
+        <!--         MS colln timespans (timeline) -->
+        <br /><br />
+        <p style="font-family:Arial;font-size:0.95em;font-weight:bold; text-align:left">Manuscript Collections Timeline</p>
+        <div id="manuscripts" class="chart"></div>
+        <p class="pc">Using time-span information from the Manuscripts collection, we can see that the collection ranges across almost 200 years of New Zealand history.</p>
+        <hr />
+        <div id="tree" class="chart"></div><br/><br/>
+        <pclass="pc">This tree shows the relative size of the Natural Sciences collections.</p>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="row calendar">
+    <div class="col-xs-12">
+    <!--         Calendar of deaths -->
+      <br /><br /><br /><br />
+      <div id="calendar" class="cal"></div>
+    <p class="pcal">This calendar shows at a glance that between July and November of 1916, there was only one day on which New Zealand did not suffer a war casualty.</p>
+    </div>
+  </div>
+</div>
+  </div>
+
+<div id="footer" class="container-fluid">
+    <div class="row" style="margin-left: 2%; margin-right: 2%;"><br/><br/><br/><hr /><br/></div>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://www.gstatic.com/charts/loader.js'></script>
+<script src='https://www.google.com/jsapi'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
