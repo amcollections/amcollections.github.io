@@ -132,7 +132,7 @@ function handleQueryResponse(response) {
 
 // chart 9: New NS tree ('tree')
 function drawChart9(){
- var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1PzmQ1IlplTBZiEftG7tHTAaJyA1yyoZjJGBDjCfGMtE/gviz/tq?range=AI:AK&headers=1&gid=0');
+ var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1PzmQ1IlplTBZiEftG7tHTAaJyA1yyoZjJGBDjCfGMtE/gviz/tq?range=AI1:AK16604&headers=1&gid=0');
   query.send(handleQueryResponse);
 
 function handleQueryResponse(response) {
