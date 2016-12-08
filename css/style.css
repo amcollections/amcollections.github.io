@@ -1,54 +1,65 @@
 .chart {
   width: 100%;
-  min-height: 350px;
+  min-height: 450px;
 }
 
 .center {
-    margin: 0 auto;
-    width: 90%;
+  margin: 0 auto;
 }
 
+
+/* Paragraph spacing */
 .pc {
   margin-left: 20%;
   margin-right: 20%;
-  text-align:left
-}
-
-.cal{
-  height: 890px;
-  margin-left: 20%;
+  text-align: left
 }
 
 .tree {
   width: 100%;
-  min-height:900;
+  min-height: 900;
 }
 
-.pcal{margin-left: 23.5%;}
-
-/* Beta tag */
-body:after{
-  content: "beta";
-  position: fixed;
-  width: 255px;
-  height: 40px;
-  background: #EE8E4A;
-  top: 40px;
-  left: -60px;
-  text-align: center;
-  font-size: 40px;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #fff;
-  line-height: 42px;
-  -webkit-transform:rotate(-45deg);
-  transform:rotate(-45deg);
+/* Mobile devices */
+@media (max-width: 768px) {
+  .page-header {
+    margin-top: 0 !important;
+  }
+  p.pc {
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+    margin-bottom: 0 !important;
+  }
 }
 
-/* Tablet and bigger */
+/* Beta tag in left-hand corner */
+@media (min-width: 1380px) {
+  /* Beta tag */
+  body:after {
+    content: "beta";
+    position: fixed;
+    width: 255px;
+    height: 40px;
+    background: #EE8E4A;
+    top: 40px;
+    left: -60px;
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    line-height: 42px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
 
-@media ( min-width: 768px) {
+/* Desktops */
+@media (min-width: 1280px) {
+  .center {
+    width: 80%;
+  }
   .grid-divider {
     position: relative;
     padding: 0;
@@ -66,4 +77,15 @@ body:after{
   .col-padding {
     padding: 0 25px;
   }
+  .cal {
+  height: 890px;
+  margin-left: 20%;
+  }
+}
+
+/* Resize calendar on smaller than 1280 */
+@media (max-width: 1280px) {
+    .cal {
+        width: 100% !important;
+    }
 }

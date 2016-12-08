@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Auckland Museum Data Insights</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
 
       <link rel="stylesheet" href="css/style.css">
 
@@ -13,83 +13,113 @@
 </head>
 
 <body>
-    <div class="container">
-  <!--   header -->
-  <div class="row header">
-    <div class="col-sm-12 clearfix page-header">
-      <a href="https://www.aucklandmuseum.com/collections"><img src="AM_logo-white.png" class="pull-right" style="padding-top:2%;" alt="Auckland War Memorial Museum Tāmaki Paenga Hira"></a>
-      <h1 style="font-weight:600;">Auckland Museum Data Insights</h1>
-      <p class="lead">Discovering the stories hidden in our data.</p>
+  <!-- Mobile message -->
+<div class="container visible-xs-block visible-sm-block" style="padding-top:5%"><div class="alert alert-warning alert-dismissible"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><p><strong>Kia ora!</strong> This project is in beta.</p><p>Graphs will look better if you turn your phone sideways, and some graphs (such as the calendar) will only work on bigger screens for now.</p></div></div>
+
+<!-- Header -->
+<div class="container">
+    <div class="row header">
+        <div class="col-sm-12 clearfix page-header">
+            <!-- desktop -->
+            <a href="https://www.aucklandmuseum.com/collections" class="hidden-sm hidden-xs">
+                <img src="https://amcollections.github.io/AM_Logo.svg" class="pull-right hidden-sm hidden-xs" style="padding-top:2%;" alt="Auckland War Memorial Museum Tāmaki Paenga Hira">
+            </a>
+            <h1 style="font-weight:600;" class="hidden-sm hidden-xs">Auckland Museum Data Insights</h1>
+            <p class="lead hidden-sm hidden-xs">Discovering the stories hidden in our data.</p>
+            
+            <!-- mobile -->
+            <a href="https://www.aucklandmuseum.com/collections" class="visible-xs-block visible-sm-block">
+                <img src="https://amcollections.github.io/AM_Logo.svg" alt="Auckland War Memorial Museum Tāmaki Paenga Hira" class="center-block" style="padding-top: 3%">
+            </a>
+            <h1 style="font-weight:600; text-align:center;" class="visible-xs-block visible-sm-block">Data Insights</h1>
+            <p class="lead visible-xs-block visible-sm-block" style="text-align:center;">Discovering stories in our data.</p>
+        </div>
     </div>
-  </div>
 </div>
+
+<!-- Columns -->
 <div class="container-fluid">
-      <div class="center">
+  <div class="center">
 
-<div class="row grid-divider columns">
-    <!--     OC column -->
-    <div class="col-md-6">
-      <div class="col-padding text-center">
-        <h3>Online Cenotaph</h3>
-        <!--         Age at Death (column chart) -->
-        <div id="ageAtDeath" class="chart"></div>
-        <p class="pc">The age at which New Zealand service personnel died.</p> <p class="pc">The youngest are two 15-year-olds: <a href="http://www.aucklandmuseum.com/war-memorial/online-cenotaph/record/C21456">Thomas Dennis Burke</a> and <a href="http://www.aucklandmuseum.com/war-memorial/online-cenotaph/record/C23385">Edward Hugh Walls</a>          were aboard the SS Port Hunter when it was torpedoed on the July 11, 1945.</p><br />
-        <!--           view live data button -->
-        <p>
-          <a href="http://yasgui.org/short/S1NyLeGQl">
-            <button type="button" class="btn btn-default btn-sm">
+    <div class="row grid-divider columns">
+      <!--     OC column -->
+      <div class="col-lg-6">
+        <div class="col-padding text-center">
+          <h3>Online Cenotaph</h3>
+          <!--         Age at Death (column chart) -->
+          <div id="ageAtDeath" class="chart"></div>
+<p class="pc visible-xs-block visible-sm-block">The age at which New Zealand service personnel died. The youngest are two 15-year-olds: <a href="http://www.aucklandmuseum.com/war-memorial/online-cenotaph/record/C21456">Thomas Dennis Burke</a> and <a href="http://www.aucklandmuseum.com/war-memorial/online-cenotaph/record/C23385">Edward Hugh Walls</a> were aboard the SS Port Hunter when it was torpedoed on the July 11, 1945.</p>
+
+<p class="pc hidden-sm hidden-xs">The age at which New Zealand service personnel died.</p>
+<p class="pc hidden-sm hidden-xs">The youngest are two 15-year-olds: <a href="http://www.aucklandmuseum.com/war-memorial/online-cenotaph/record/C21456">Thomas Dennis Burke</a> and <a href="http://www.aucklandmuseum.com/war-memorial/online-cenotaph/record/C23385">Edward Hugh Walls</a>    were aboard the SS Port Hunter when it was torpedoed on the July 11, 1945.</p><br />
+          <!--           view live data button -->
+          <p>
+            <a href="http://yasgui.org/short/S1NyLeGQl">
+              <button type="button" class="btn btn-default btn-sm">
                 <span class="glyphicon glyphicon-new-window"></span>&nbsp;View live data</button></a>
-        </p>
-        <hr />
-        <!--         Enlistment date (column chart) -->
-        <div id="enlistdate" class="chart"></div>
-        <p class="pc">A sampling of enlistment dates.</p> <p class="pc">The second spike, just before Christmas 1916, corresponds with the introduction of conscription.</p><br />
-        <!--           view live data button -->
-        <p>
-          <a href="http://yasgui.org/short/rkLCTlzQe">
-            <button type="button" class="btn btn-default btn-sm">
+          </p>
+          <hr />
+          <!--         Enlistment date (column chart) -->
+          <div id="enlistdate" class="chart"></div>
+          <p class="pc visible-xs-block visible-sm-block">A sampling of enlistment dates. The second spike, just before Christmas 1916, corresponds with the introduction of conscription.</p>
+<p class="pc hidden-sm hidden-xs">A sampling of enlistment dates.</p>
+<p class="pc hidden-sm hidden-xs">The second spike, just before Christmas 1916, corresponds with the introduction of conscription.</p><br />
+          <!--           view live data button -->
+          <p>
+            <a href="http://yasgui.org/short/rkLCTlzQe">
+              <button type="button" class="btn btn-default btn-sm">
                 <span class="glyphicon glyphicon-new-window"></span>&nbsp;View live data</button></a>
-        </p>
-        <hr />
-        <!--        Man v. horse (stacked horizontal bar chart) -->
-        <div id="cargo" class="chart" style="width:84%; margin-left: 8%; margin-right: 8%; height:400px"></div>
-        <p class="pc">During the First World War, 10,000 horses were transported from New Zealand.</p> <p class="pc">Using data from Cenotaph we can see that approximately 30 per cent of all trooship cargo was equine.</p><br />
-        <!--           view live data button -->
-        <p>
-          <a href="http://yasgui.org/short/BknXjmG7l"><button type="button" class="btn btn-default btn-sm">
+          </p>
+          <hr />
+          <!--        Man v. horse (stacked horizontal bar chart) -->
+          <div id="cargo" class="chart"></div>
+          <p class="pc">During the First World War, 10,000 horses were transported from New Zealand.</p>
+          <p class="pc">Using data from Cenotaph we can see that approximately 30 per cent of all troopship cargo was equine.</p><br />
+          <!--           view live data button -->
+          <p>
+            <a href="http://yasgui.org/short/BknXjmG7l"><button type="button" class="btn btn-default btn-sm">
                 <span class="glyphicon glyphicon-new-window"></span>&nbsp;View live data</button></a></p>
+        </div>
+      </div>
+      <!--  separator block for mobile users  -->
+<hr style="margin-left, margin-right:2%; padding-top:2%;" class="visible-xs-block visible-sm-block" />
+      <!--     CO column -->
+      <div class="col-lg-6">
+        <div class="col-padding text-center">
+          <!--         Manuscripts timeline  -->
+          <h3>Collections Online</h3>
+          <!--         MS colln timespans (timeline) -->
+          <br /><br />
+          <p style="font-family:Arial;font-size:0.95em;font-weight:bold; text-align:left">Manuscript Collections Timeline</p>
+          <div id="manuscripts" class="chart"></div>
+          <p class="pc">Using a selection of records containing time-span data from the Manuscripts collection, we can see that the collection ranges across almost 200 years of New Zealand history.</p>
+          <hr /><br/><br/>
+          <!--         NS tree (new) -->
+          <div id="tree" class="chart"></div><br/><br/><br/>
+          <p class="pc">This tree shows the relative sizes of the Natural Sciences collections.</p>
+          <div class="visible-xs-block visible-sm-block" style="padding-left:10%; padding-right:10%;"><br /><div class="well well-sm" style="background: white;"><span class="glyphicon glyphicon-hand-up"></span>&nbsp;&nbsp;Tap through classifications.</div></div>
+          <p class="pc hidden-sm hidden-xs"><br/>Click on the blocks to zoom in and see the classifications that make up each department. <small>(Right click to go back.)</small></p>
+        </div>
       </div>
     </div>
-    <!--     CO column -->
-    <div class="col-md-6">
-      <div class="col-padding text-center">
-        <!--         Manuscripts timeline  -->
-        <h3>Collections Online</h3>
-        <!--         MS colln timespans (timeline) -->
-        <br /><br />
-        <p style="font-family:Arial;font-size:0.95em;font-weight:bold; text-align:left">Manuscript Collections Timeline</p>
-        <div id="manuscripts" class="chart"></div>
-        <p class="pc">Using a selection of records containing time-span data from the Manuscripts collection, we can see that the collection ranges across almost 200 years of New Zealand history.</p>
-        <hr /><br/><br/>
-        <div id="tree" class="chart"></div><br/><br/><br/>
-        <p class="pc">This tree shows the relative sizes of the Natural Sciences collections. <br/>Click on the blocks to zoom in and see the classifications that make up each department. <small>(Right click to go back.)</small></p>
-      </div>
-    </div>
-  </div>
-  <hr />
-  <div class="row calendar">
-    <div class="col-xs-12">
-    <!--         Calendar of deaths -->
-      <br /><br /><br /><br />
-      <div id="calendar" class="cal"></div>
-    <p class="pcal">This calendar shows at a glance that between June and November of 1916, there was only one day on which New Zealand did not suffer a war casualty.</p>
-    </div>
+    <hr />
   </div>
 </div>
-  </div>
 
-<div id="footer" class="container-fluid">
-    <div class="row" style="margin-left: 2%; margin-right: 2%;"><br/><br/><br/><hr /><br/></div>
+<!-- Calendar and footer -->
+
+<div class="container-fluid">
+    <div class="center">
+        <div class="row">
+            <br /><br /><br /><br />
+            <div id="calendar" class="cal"></div>
+            <p class="pc">This calendar shows at a glance that between June and November of 1916, there was only one day on which New Zealand did not suffer a war casualty.</p>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="row" style="margin-left: 2%; margin-right: 2%;"><br/><br/><br/>
+        <hr /><br/>
+    </div>
 </div>
   <script src='https://www.gstatic.com/charts/loader.js'></script>
 <script src='https://www.google.com/jsapi'></script>
