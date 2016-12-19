@@ -26,7 +26,7 @@
             </a>
             <h1 style="font-weight:600;" class="hidden-sm hidden-xs">Auckland Museum Data Insights</h1>
             <p class="lead hidden-sm hidden-xs">Discovering the stories hidden in our data.</p>
-            
+
             <!-- mobile -->
             <a href="https://www.aucklandmuseum.com/collections" class="visible-xs-block visible-sm-block">
                 <img src="https://amcollections.github.io/AM_Logo.svg" alt="Auckland War Memorial Museum Tāmaki Paenga Hira" class="center-block" style="padding-top: 3%">
@@ -39,13 +39,9 @@
 
 <!-- Columns -->
 <div class="container-fluid">
-  <div class="center">
-
-    <div class="row grid-divider columns">
-      <!--     OC column -->
-      <div class="col-lg-6">
-        <div class="col-padding text-center">
-          <h3>Online Cenotaph</h3>
+  <div class="text-center">
+      <div class="row">
+          <h2>Online Cenotaph</h2>
           <!--         Age at Death (column chart) -->
           <div id="ageAtDeath" class="chart"></div>
 <p class="pc visible-xs-block visible-sm-block">The age at which New Zealand service personnel died. The youngest are two 15-year-olds: <a href="http://www.aucklandmuseum.com/war-memorial/online-cenotaph/record/C21456">Thomas Dennis Burke</a> and <a href="http://www.aucklandmuseum.com/war-memorial/online-cenotaph/record/C23385">Edward Hugh Walls</a> were aboard the SS Port Hunter when it was torpedoed on the July 11, 1945.</p>
@@ -78,32 +74,21 @@
           <p>
             <a href="http://yasgui.org/short/BknXjmG7l"><button type="button" class="btn btn-default btn-sm">
                 <span class="glyphicon glyphicon-new-window"></span>&nbsp;View live data</button></a></p>
-        </div>
-      </div>
-      <!--  separator block for mobile users  -->
-<hr style="margin-left, margin-right:2%; padding-top:2%;" class="visible-xs-block visible-sm-block" />
-      <!--     CO column -->
-      <div class="col-lg-6">
-        <div class="col-padding text-center">
+<hr style="margin: 0 2%; padding-top:2%;" />
+          <hr />
+          <h2>Collections Online</h2>
           <!--         Manuscripts timeline  -->
-          <h3>Collections Online</h3>
-          <!--         MS colln timespans (timeline) -->
           <br /><br />
-          <p style="font-family:Arial;font-size:0.95em;font-weight:bold; text-align:left">Manuscript Collections Timeline</p>
+          <p>Manuscript Collections Timeline</p>
           <div id="manuscripts" class="chart"></div>
           <p class="pc">Using a selection of records containing time-span data from the Manuscripts collection, we can see that the collection ranges across almost 200 years of New Zealand history.</p>
           <hr /><br/><br/>
-          <!--         NS tree (new) -->
-          <div id="tree" class="chart"></div><br/><br/><br/>
-          <p class="pc">This tree shows the relative sizes of the Natural Sciences collections.</p>
-          <div class="visible-xs-block visible-sm-block" style="padding-left:10%; padding-right:10%;"><br /><div class="well well-sm" style="background: white;"><span class="glyphicon glyphicon-hand-up"></span>&nbsp;&nbsp;Tap through classifications.</div></div>
-          <p class="pc hidden-sm hidden-xs"><br/>Click on the blocks to zoom in and see the classifications that make up each department. <small>(Right click to go back.)</small></p>
+
+<!--  separator block for mobile users  -->
+          <hr style="margin-left, margin-right:2%; padding-top:2%;" class="visible-xs-block visible-sm-block" />
         </div>
-      </div>
     </div>
-    <hr />
   </div>
-</div>
 
 <!-- Calendar and footer -->
 
@@ -123,6 +108,7 @@
   <script src='https://www.gstatic.com/charts/loader.js'></script>
 <script src='https://www.google.com/jsapi'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
 
     <script src="js/index.js"></script>
 

@@ -11,7 +11,7 @@ google.charts.setOnLoadCallback(drawChart4); // elistment dates
 google.charts.setOnLoadCallback(drawChart6); // troopship cargo
 google.charts.setOnLoadCallback(drawChart7); // MS timeline
 google.charts.setOnLoadCallback(drawChart8); // calendar of death dates
-google.charts.setOnLoadCallback(drawChart9); // new NS tree
+//google.charts.setOnLoadCallback(drawChart9); // new NS tree
 
 // Chart 1: Age at Death
 function drawChart1() {
@@ -118,7 +118,7 @@ function drawChart8() {
   function handleQueryResponse(response) {
     var data = response.getDataTable();
     var options = {
-      title: 'Casualties by Date',
+      title: 'Fatalities by Date',
       height: 860,
       calendar: {
         cellSize: 18,

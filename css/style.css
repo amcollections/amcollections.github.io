@@ -1,5 +1,10 @@
+.container-fluid {
+	width: 90%
+}
+
 .chart {
-  width: 100%;
+  width: 80%;
+	 margin: 0 auto;
   min-height: 450px;
 }
 
@@ -9,8 +14,8 @@
 
 /* Paragraph spacing */
 .pc {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin: 0 20%;
+/*   margin-right: 20%; */
   text-align: left
 }
 
@@ -78,7 +83,7 @@
   }
   .cal {
   height: 890px;
-  margin-left: 20%;
+/*   margin-left: 20%; */
   }
 }
 
