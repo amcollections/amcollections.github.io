@@ -225,5 +225,5 @@ var electorates = {
     "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
   }
   }, 
-  "max_turnout": "3200"
+  "max_turnout": "39816"
 }
