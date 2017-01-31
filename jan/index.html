@@ -109,13 +109,15 @@ var hex = svg.selectAll(".hexagon")
       .data(hexbin(points))
     .enter().append("path")
       .attr("class", "hexagon")
-      .attr("d", function(d, i) {
-        if (i<mapdata.length) {
-          electorate = electorates.results[mapdata[i]];
-          if ("total_votes_cast" in electorate) { return hexbin.hexagon(radius(electorate.total_votes_cast)); }
-        }
-        return hexbin.hexagon(radius(2000));
-      })
+      .attr("d", function(d, i)
+            //{
+     //   if (i<mapdata.length) {
+       //   electorate = electorates.results[mapdata[i]];
+       //   if ("total_votes_cast" in electorate) { return hexbin.hexagon(radius(electorate.total_votes_cast)); }
+     //   }
+     //   return hexbin.hexagon(radius(2000));
+      //}
+     // )
       .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
       .style("stroke", function (d, i) {
         if (i<mapdata.length) {
