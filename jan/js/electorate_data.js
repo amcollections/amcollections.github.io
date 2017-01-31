@@ -1,231 +1,460 @@
 var electorates = {
   "results": {
-  {
-  "1": {
-    "electoral_district": "Torbay",
-    "map_id": 1,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "2": {
-    "electoral_district": "Oteha",
-    "map_id": 2,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "3": {
-    "electoral_district": "Browns Bay",
-    "map_id": 3,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "4": {
-    "electoral_district": "Rothesay Bay",
-    "map_id": 4,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "5": {
-    "electoral_district": "Pinehill",
-    "map_id": 5,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "6": {
-    "electoral_district": "Albany",
-    "map_id": 6,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "7": {
-    "electoral_district": "Windsor Park",
-    "map_id": 7,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "8": {
-    "electoral_district": "Murrays Bay",
-    "map_id": 8,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "9": {
-    "electoral_district": "Unsworth Heights",
-    "map_id": 9,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "10": {
-    "electoral_district": "Sunnynook",
-    "map_id": 10,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "11": {
-    "electoral_district": "Mairangi Bay",
-    "map_id": 11,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "12": {
-    "electoral_district": "Totara Vale",
-    "map_id": 12,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "13": {
-    "electoral_district": "Forrest Hill",
-    "map_id": 13,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "14": {
-    "electoral_district": "Campbells Bay",
-    "map_id": 14,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "15": {
-    "electoral_district": "Greenhithe",
-    "map_id": 15,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "16": {
-    "electoral_district": "Bay View",
-    "map_id": 16,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "17": {
-    "electoral_district": "Glenfield",
-    "map_id": 17,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "18": {
-    "electoral_district": "Castor Bay",
-    "map_id": 18,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "19": {
-    "electoral_district": "Birkdale",
-    "map_id": 19,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "20": {
-    "electoral_district": "Hillcrest",
-    "map_id": 20,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "21": {
-    "electoral_district": "Nothcote",
-    "map_id": 21,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "22": {
-    "electoral_district": "Milford",
-    "map_id": 22,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "23": {
-    "electoral_district": "Takapuna",
-    "map_id": 23,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "24": {
-    "electoral_district": "Hauraki",
-    "map_id": 24,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "25": {
-    "electoral_district": "Belmont",
-    "map_id": 25,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "26": {
-    "electoral_district": "Baywater",
-    "map_id": 26,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "27": {
-    "electoral_district": "Narrowneck",
-    "map_id": 27,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "28": {
-    "electoral_district": "Devonport",
-    "map_id": 28,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "29": {
-    "electoral_district": "Beachhaven",
-    "map_id": 29,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "30": {
-    "electoral_district": "Birkenhead",
-    "map_id": 30,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "31": {
-    "electoral_district": "Northcote Point",
-    "map_id": 31,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  },
-  "32": {
-    "electoral_district": "Chatwood",
-    "map_id": 32,
-    "total_votes_cast": 100,
-    "party": "National Party",
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "69%"
-  }
-}
+    "01": {
+      "electorate_candidate": "BENNETT, Paula Lee", 
+      "urban": "yes", 
+      "map_id": 1, 
+      "electoral_district": "Waitakere", 
+      "valid_winning_candidate_votes": 13465, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "44.74%", 
+      "total_votes_cast": 31857, 
+      "on_the_party_list": "yes", 
+      "majority": 9, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "02": {
+      "electorate_candidate": "ARDERN, Philip Shane", 
+      "urban": "", 
+      "map_id": 2, 
+      "electoral_district": "Taranaki-King Country", 
+      "valid_winning_candidate_votes": 20842, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "69.65%", 
+      "total_votes_cast": 31461, 
+      "on_the_party_list": "yes", 
+      "majority": 15089, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "03": {
+      "electorate_candidate": "FAAFOI, Kristopher John", 
+      "urban": "yes", 
+      "map_id": 3, 
+      "electoral_district": "Mana", 
+      "valid_winning_candidate_votes": 16323, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "48.61%", 
+      "total_votes_cast": 35291, 
+      "on_the_party_list": "yes", 
+      "majority": 2230, 
+      "party": "Labour Party", 
+      "maori_electorate": "no"
+    }, 
+    "04": {
+      "electorate_candidate": "SMITH, Nicolas Rex", 
+      "urban": "", 
+      "map_id": 4, 
+      "electoral_district": "Nelson", 
+      "valid_winning_candidate_votes": 18360, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "53.14%", 
+      "total_votes_cast": 35696, 
+      "on_the_party_list": "yes", 
+      "majority": 7088, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "05": {
+      "electorate_candidate": "COLLINS, Judith Anne", 
+      "urban": "", 
+      "map_id": 5, 
+      "electoral_district": "Papakura", 
+      "valid_winning_candidate_votes": 18096, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "59.59%", 
+      "total_votes_cast": 32302, 
+      "on_the_party_list": "yes", 
+      "majority": 9890, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "06": {
+      "electorate_candidate": "GOODHEW, Joanne Gay", 
+      "urban": "", 
+      "map_id": 6, 
+      "electoral_district": "Rangitata", 
+      "valid_winning_candidate_votes": 19580, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "55.77%", 
+      "total_votes_cast": 36404, 
+      "on_the_party_list": "yes", 
+      "majority": 6537, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "07": {
+      "electorate_candidate": "CURRAN, Clare Elizabeth", 
+      "urban": "yes", 
+      "map_id": 7, 
+      "electoral_district": "Dunedin South", 
+      "valid_winning_candidate_votes": 16844, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "48.89%", 
+      "total_votes_cast": 35692, 
+      "on_the_party_list": "yes", 
+      "majority": 4175, 
+      "party": "Labour Party", 
+      "maori_electorate": "no"
+    }, 
+    "08": {
+      "electorate_candidate": "CLARK, David Scott", 
+      "urban": "yes", 
+      "map_id": 8, 
+      "electoral_district": "Dunedin North", 
+      "valid_winning_candidate_votes": 12976, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "44.25%", 
+      "total_votes_cast": 30292, 
+      "on_the_party_list": "yes", 
+      "majority": 3489, 
+      "party": "Labour Party", 
+      "maori_electorate": "no"
+    }, 
+    "09": {
+      "electorate_candidate": "ENGLISH, Simon William", 
+      "urban": "", 
+      "map_id": 9, 
+      "electoral_district": "Clutha-Southland", 
+      "valid_winning_candidate_votes": 21375, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "68.83%", 
+      "total_votes_cast": 32176, 
+      "on_the_party_list": "yes", 
+      "majority": 16168, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "10": {
+      "electorate_candidate": "ROY, Eric Wilbur", 
+      "urban": "", 
+      "map_id": 10, 
+      "electoral_district": "Invercargill", 
+      "valid_winning_candidate_votes": 17275, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "54.58%", 
+      "total_votes_cast": 32811, 
+      "on_the_party_list": "yes", 
+      "majority": 6263, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "11": {
+      "electorate_candidate": "TOLLEY, Anne Merrilyn", 
+      "urban": "", 
+      "map_id": 11, 
+      "electoral_district": "East Coast", 
+      "valid_winning_candidate_votes": 14003, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "48.27%", 
+      "total_votes_cast": 30264, 
+      "on_the_party_list": "yes", 
+      "majority": 4774, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "12": {
+      "electorate_candidate": "YOUNG, Jonathan Edgar Joseph", 
+      "urban": "", 
+      "map_id": 12, 
+      "electoral_district": "New Plymouth", 
+      "valid_winning_candidate_votes": 17644, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "53.31%", 
+      "total_votes_cast": 34334, 
+      "on_the_party_list": "yes", 
+      "majority": 4270, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "13": {
+      "electorate_candidate": "TISCH, William Lindsay", 
+      "urban": "", 
+      "map_id": 13, 
+      "electoral_district": "Waikato", 
+      "valid_winning_candidate_votes": 19817, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "64.9%", 
+      "total_votes_cast": 31970, 
+      "on_the_party_list": "yes", 
+      "majority": 14198, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "14": {
+      "electorate_candidate": "SIMPSON, Scott Anthony", 
+      "urban": "", 
+      "map_id": 14, 
+      "electoral_district": "Coromandel", 
+      "valid_winning_candidate_votes": 18571, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "55.05%", 
+      "total_votes_cast": 35006, 
+      "on_the_party_list": "yes", 
+      "majority": 12740, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "15": {
+      "electorate_candidate": "BENNETT, David Allister", 
+      "urban": "yes", 
+      "map_id": 15, 
+      "electoral_district": "Hamilton East", 
+      "valid_winning_candidate_votes": 18505, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "57.11%", 
+      "total_votes_cast": 33824, 
+      "on_the_party_list": "yes", 
+      "majority": 8275, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "16": {
+      "electorate_candidate": "SIO, Su'a Viliamu", 
+      "urban": "yes", 
+      "map_id": 16, 
+      "electoral_district": "M\u0101ngere", 
+      "valid_winning_candidate_votes": 18177, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "75.9%", 
+      "total_votes_cast": 26528, 
+      "on_the_party_list": "yes", 
+      "majority": 15159, 
+      "party": "Labour Party", 
+      "maori_electorate": "no"
+    }, 
+    "17": {
+      "electorate_candidate": "WALL, Louisa Hareruia", 
+      "urban": "yes", 
+      "map_id": 17, 
+      "electoral_district": "Manurewa", 
+      "valid_winning_candidate_votes": 14961, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "63.27%", 
+      "total_votes_cast": 26457, 
+      "on_the_party_list": "no", 
+      "majority": 8610, 
+      "party": "Labour Party", 
+      "maori_electorate": "no"
+    }, 
+    "18": {
+      "electorate_candidate": "KEY, John Phillip", 
+      "urban": "", 
+      "map_id": 18, 
+      "electoral_district": "Helensville", 
+      "valid_winning_candidate_votes": 26011, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "74.38%", 
+      "total_votes_cast": 36266, 
+      "on_the_party_list": "yes", 
+      "majority": 21066, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "19": {
+      "electorate_candidate": "HUTCHISON, Charles Paul Telford", 
+      "urban": "", 
+      "map_id": 19, 
+      "electoral_district": "Hunua", 
+      "valid_winning_candidate_votes": 22563, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "65.59%", 
+      "total_votes_cast": 35885, 
+      "on_the_party_list": "yes", 
+      "majority": 16797, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "20": {
+      "electorate_candidate": "ROBERTSON, Grant Murray", 
+      "urban": "yes", 
+      "map_id": 20, 
+      "electoral_district": "Wellington Central", 
+      "valid_winning_candidate_votes": 18836, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "49.15%", 
+      "total_votes_cast": 39816, 
+      "on_the_party_list": "yes", 
+      "majority": 6376, 
+      "party": "Labour Party", 
+      "maori_electorate": "no"
+    }, 
+    "21": {
+      "electorate_candidate": "KING, Annette Faye", 
+      "urban": "yes", 
+      "map_id": 21, 
+      "electoral_district": "Rongotai", 
+      "valid_winning_candidate_votes": 18179, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "50.52%", 
+      "total_votes_cast": 37596, 
+      "on_the_party_list": "yes", 
+      "majority": 9047, 
+      "party": "Labour Party", 
+      "maori_electorate": "no"
+    }, 
+    "22": {
+      "electorate_candidate": "COLEMAN, Jonathan David", 
+      "urban": "yes", 
+      "map_id": 22, 
+      "electoral_district": "Northcote", 
+      "valid_winning_candidate_votes": 18908, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "58.46%", 
+      "total_votes_cast": 33454, 
+      "on_the_party_list": "yes", 
+      "majority": 9379, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "23": {
+      "electorate_candidate": "MALLARD, Trevor Colin", 
+      "urban": "yes", 
+      "map_id": 23, 
+      "electoral_district": "Hutt South", 
+      "valid_winning_candidate_votes": 15828, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "49.38%", 
+      "total_votes_cast": 33550, 
+      "on_the_party_list": "yes", 
+      "majority": 4825, 
+      "party": "Labour Party", 
+      "maori_electorate": "no"
+    }, 
+    "24": {
+      "electorate_candidate": "RYALL, Anthony Boyd Williams", 
+      "urban": "", 
+      "map_id": 24, 
+      "electoral_district": "Bay of Plenty", 
+      "valid_winning_candidate_votes": 23710, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "67.48%", 
+      "total_votes_cast": 36622, 
+      "on_the_party_list": "yes", 
+      "majority": 17760, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "25": {
+      "electorate_candidate": "HIPKINS, Christopher John", 
+      "urban": "yes", 
+      "map_id": 25, 
+      "electoral_district": "Rimutaka", 
+      "valid_winning_candidate_votes": 17171, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "51.58%", 
+      "total_votes_cast": 34870, 
+      "on_the_party_list": "yes", 
+      "majority": 3286, 
+      "party": "Labour Party", 
+      "maori_electorate": "no"
+    }, 
+    "26": {
+      "electorate_candidate": "GUY, Allen Nathan", 
+      "urban": "", 
+      "map_id": 26, 
+      "electoral_district": "\u014ctaki", 
+      "valid_winning_candidate_votes": 19151, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "51.57%", 
+      "total_votes_cast": 38098, 
+      "on_the_party_list": "yes", 
+      "majority": 5231, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "27": {
+      "electorate_candidate": "HAYES, John Bernard", 
+      "urban": "", 
+      "map_id": 27, 
+      "electoral_district": "Wairarapa", 
+      "valid_winning_candidate_votes": 17881, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "52.65%", 
+      "total_votes_cast": 35473, 
+      "on_the_party_list": "yes", 
+      "majority": 7135, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "28": {
+      "electorate_candidate": "TWYFORD, Philip Stoner", 
+      "urban": "yes", 
+      "map_id": 28, 
+      "electoral_district": "Te Atat\u016b", 
+      "valid_winning_candidate_votes": 15860, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "53.83%", 
+      "total_votes_cast": 31668, 
+      "on_the_party_list": "yes", 
+      "majority": 5416, 
+      "party": "Labour Party", 
+      "maori_electorate": "no"
+    }, 
+    "29": {
+      "electorate_candidate": "UPSTON, Louise Claire", 
+      "urban": "", 
+      "map_id": 29, 
+      "electoral_district": "Taup\u014d", 
+      "valid_winning_candidate_votes": 20934, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "63.65%", 
+      "total_votes_cast": 34204, 
+      "on_the_party_list": "yes", 
+      "majority": 14115, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "30": {
+      "electorate_candidate": "DEAN, Jacqueline Isobel", 
+      "urban": "", 
+      "map_id": 30, 
+      "electoral_district": "Waitaki", 
+      "valid_winning_candidate_votes": 23219, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "61.45%", 
+      "total_votes_cast": 39000, 
+      "on_the_party_list": "yes", 
+      "majority": 14143, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "31": {
+      "electorate_candidate": "ADAMS, Amy Juliet", 
+      "urban": "", 
+      "map_id": 31, 
+      "electoral_district": "Selwyn", 
+      "valid_winning_candidate_votes": 24963, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "69.14%", 
+      "total_votes_cast": 37168, 
+      "on_the_party_list": "yes", 
+      "majority": 19451, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "32": {
+      "electorate_candidate": "McCULLY, Murray Stuart", 
+      "urban": "yes", 
+      "map_id": 32, 
+      "electoral_district": "East Coast Bays", 
+      "valid_winning_candidate_votes": 21094, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "64.98%", 
+      "total_votes_cast": 33888, 
+      "on_the_party_list": "yes", 
+      "majority": 14641, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "33": {
+      "electorate_candidate": "O'CONNOR, Damien Peter", 
+      "urban": "", 
+      "map_id": 33, 
+      "electoral_district": "West Coast-Tasman", 
+      "valid_winning_candidate_votes": 15753, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "47.51%", 
+      "total_votes_cast": 34226, 
+      "on_the_party_list": "no", 
+      "majority": 2539, 
+      "party": "Labour Party", 
+      "maori_electorate": "no"
+    }, 
+    "34": {
+      "electorate_candidate": "HEATLEY, Philip Reeve", 
+      "urban": "", 
+      "map_id": 34, 
+      "electoral_district": "Whangarei", 
+      "valid_winning_candidate_votes": 20049, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "59.18%", 
+      "total_votes_cast": 34995, 
+      "on_the_party_list": "yes", 
+      "majority": 12447, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    }, 
+    "35": {
+      "electorate_candidate": "WOODS, Megan Cherie", 
+      "urban": "yes", 
+      "map_id": 35, 
+      "electoral_district": "Wigram", 
+      "valid_winning_candidate_votes": 14080, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "45.11%", 
+      "total_votes_cast": 32834, 
+      "on_the_party_list": "yes", 
+      "majority": 1500, 
+      "party": "Labour Party", 
+      "maori_electorate": "no"
+    }, 
   }, 
-  "max_turnout": "3200"
+  "max_turnout": "39816"
 }
