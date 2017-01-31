@@ -1,6 +1,5 @@
 var electorates = {
   "results": {
-   {
   "1": {
     "electoral_district": "Torbay",
     "map_id": 1,
