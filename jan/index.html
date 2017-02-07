@@ -1,6 +1,6 @@
 <body>
   <meta charset="utf-8">
-<title>Hexagonal Map of NZ General Electorate Party Wins 2011</title>
+<title>Hexagonal Map of Auckland</title>
 <style>
 .hexagon {
   fill: none;
@@ -110,14 +110,14 @@ var hex = svg.selectAll(".hexagon")
     .enter().append("path")
       .attr("class", "hexagon")
       .attr("d", function(d, i)
-            //{
-     //   if (i<mapdata.length) {
-       //   electorate = electorates.results[mapdata[i]];
-       //   if ("total_votes_cast" in electorate) { return hexbin.hexagon(radius(electorate.total_votes_cast)); }
-     //   }
-     //   return hexbin.hexagon(radius(2000));
-      //}
-     // )
+            {
+        if (i<mapdata.length) {
+          electorate = electorates.results[mapdata[i]];
+          if ("total_votes_cast" in electorate) { return hexbin.hexagon(radius(electorate.total_votes_cast)); }
+        }
+       return hexbin.hexagon(radius(2000));
+      }
+      )
       .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
       .style("stroke", function (d, i) {
         if (i<mapdata.length) {
