@@ -1,28 +1,33 @@
 var electorates = {
   "results": {
-  "01": {
-    "electoral_district": "Torbay",
-    "valid_winning_candidate_votes": 18188,
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "57.55%",
-    "total_votes_cast": 33245,
-    "on_the_party_list": "yes",
-    "party": "National Party"
-  },
-  "02": {
-    "electoral_district": "Oteha",
-    "valid_winning_candidate_votes": 20049,
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "59.18%",
-    "total_votes_cast": 34995,
-    "on_the_party_list": "yes",
-    "party": "National Party"
+    "07": {
+      "electorate_candidate": "BENNETT, Paula Lee", 
+      "urban": "yes", 
+      "map_id": 7, 
+      "electoral_district": "Waitakere", 
+      "valid_winning_candidate_votes": 13465, 
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "44.74%", 
+      "total_votes_cast": 31857, 
+      "on_the_party_list": "yes", 
+      "majority": 9, 
+      "party": "National Party", 
+      "maori_electorate": "no"
+    },
+    "02": {
+      "electoral_district": "Oteha",
+      "valid_winning_candidate_votes": 20049,
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "59.18%",
+      "total_votes_cast": 34995,
+      "on_the_party_list": "yes",
+      "party": "National Party"
   },
   "03": {
-    "electoral_district": "Browns Bay",
-    "valid_winning_candidate_votes": 20253,
-    "percentage_of_elected_candidate_votes_cast_in_electorate": "53.54%",
-    "total_votes_cast": 38997,
-    "on_the_party_list": "yes",
-    "party": "National Party"
+      "electoral_district": "Browns Bay",
+      "valid_winning_candidate_votes": 20253,
+      "percentage_of_elected_candidate_votes_cast_in_electorate": "53.54%",
+      "total_votes_cast": 38997,
+      "on_the_party_list": "yes",
+      "party": "National Party"
   },
   "04": {
     "electoral_district": "Rothesay Bay",
