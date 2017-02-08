@@ -69,7 +69,8 @@ var electorates = {
 	    "percentage_of_elected_candidate_votes_cast_in_electorate": "100%",
 	    "total_votes_cast": 200,
 	    "party": "National Party"
-	  },
+  		}	  
+  },
 "max_turnout": "6400"
 }
 
