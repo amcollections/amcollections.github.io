@@ -70,8 +70,6 @@ var electorates = {
 	    "total_votes_cast": 200,
 	    "party": "National Party"
 	  },
-   "max_turnout": "6400"
+"max_turnout": "6400"
 }
-  }, 
-  "max_turnout": "39816"
-}
+
