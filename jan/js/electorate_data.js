@@ -1,6 +1,6 @@
 var electorates = {
   "results": {
-  "1": {
+  "01": {
     "electoral_district": "Torbay",
     "valid_winning_candidate_votes": 18188,
     "percentage_of_elected_candidate_votes_cast_in_electorate": "57.55%",
@@ -8,7 +8,7 @@ var electorates = {
     "on_the_party_list": "yes",
     "party": "National Party"
   },
-  "2": {
+  "02": {
     "electoral_district": "Oteha",
     "valid_winning_candidate_votes": 20049,
     "percentage_of_elected_candidate_votes_cast_in_electorate": "59.18%",
@@ -16,7 +16,7 @@ var electorates = {
     "on_the_party_list": "yes",
     "party": "National Party"
   },
-  "3": {
+  "03": {
     "electoral_district": "Browns Bay",
     "valid_winning_candidate_votes": 20253,
     "percentage_of_elected_candidate_votes_cast_in_electorate": "53.54%",
@@ -24,7 +24,7 @@ var electorates = {
     "on_the_party_list": "yes",
     "party": "National Party"
   },
-  "4": {
+  "04": {
     "electoral_district": "Rothesay Bay",
     "valid_winning_candidate_votes": 26011,
     "percentage_of_elected_candidate_votes_cast_in_electorate": "74.38%",
@@ -32,7 +32,7 @@ var electorates = {
     "on_the_party_list": "yes",
     "party": "National Party"
   },
-  "5": {
+  "05": {
     "electoral_district": "Pinehill",
     "valid_winning_candidate_votes": 21094,
     "percentage_of_elected_candidate_votes_cast_in_electorate": "64.98%",
@@ -40,7 +40,7 @@ var electorates = {
     "on_the_party_list": "yes",
     "party": "National Party"
   },
-  "6": {
+  "06": {
     "electoral_district": "Albany",
     "valid_winning_candidate_votes": 22709,
     "percentage_of_elected_candidate_votes_cast_in_electorate": "62.44%",
@@ -48,7 +48,7 @@ var electorates = {
     "on_the_party_list": "yes",
     "party": "National Party"
   },
-  "7": {
+  "07": {
     "electoral_district": "Windsor Park",
     "valid_winning_candidate_votes": 13465,
     "percentage_of_elected_candidate_votes_cast_in_electorate": "44.74%",
@@ -56,7 +56,7 @@ var electorates = {
     "on_the_party_list": "yes",
     "party": "National Party"
   },
-  "8": {
+  "08": {
     "electoral_district": "Murrays Bay",
     "valid_winning_candidate_votes": 18908,
     "percentage_of_elected_candidate_votes_cast_in_electorate": "58.46%",
@@ -64,7 +64,7 @@ var electorates = {
     "on_the_party_list": "yes",
     "party": "National Party"
   },
-  "9": {
+  "09": {
     "electoral_district": "Unsworth Heights",
     "valid_winning_candidate_votes": 15860,
     "percentage_of_elected_candidate_votes_cast_in_electorate": "53.83%",
