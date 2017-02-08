@@ -12,6 +12,7 @@ var electorates = {
       "majority": 9, 
       "party": "National Party", 
       "maori_electorate": "no" 
+ }
   }, 
   "max_turnout": "39816"
 }
