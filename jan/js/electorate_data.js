@@ -1,6 +1,5 @@
 var electorates = {
   "results": {
-    {
   "1": {
     "electoral_district": "Torbay",
     "valid_winning_candidate_votes": 100,
