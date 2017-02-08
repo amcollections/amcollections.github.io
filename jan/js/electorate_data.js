@@ -10,7 +10,7 @@ var electorates = {
       "total_votes_cast": 31857, 
      // "on_the_party_list": "yes", 
      // "majority": 9, 
-      "party": "labour Party", 
+      "party": "Labour Party", 
      // "maori_electorate": "no"
     }, 
     "30": {
