@@ -225,5 +225,5 @@ var electorates = {
     "": "National Party"
   }
   }, 
-  "max_turnout": "39816"
+  "max_turnout": "6400"
 }
