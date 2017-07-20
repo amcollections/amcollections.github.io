@@ -3,7 +3,7 @@
 // Chart 3: Collection Sizes
 // Chart 4: Natural Sciences tree (old version)
 
-google.load("visualization", "1", {
+google.charts.load("visualization", "1", {
   packages: ["corechart", "treemap", "timeline", "calendar"]
 });
 google.charts.setOnLoadCallback(drawChart1); // age at death
