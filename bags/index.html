@@ -1,86 +1,260 @@
-<!DOCTYPE html>
-<html lang="en" >
-
+<html >
 <head>
   <meta charset="UTF-8">
-  <title>CSS3 - Responsive Image Grids with Transitional Effects when Hovered</title>
-  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <title>Auckland Museum Collection Insights 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+ </head>
 
   
-      <link rel="stylesheet" href="css/style.css">
-
   
-</head>
+  
+<!--  Logo + Header -->
+<div class="container">
+    <div class="row header">
+        <div class="col-sm-12 clearfix page-header">
+            <!-- desktop -->
+            <a href="https://www.aucklandmuseum.com/collections" class="hidden-sm hidden-xs">
+                <img src="https://amcollections.github.io/AM_Logo.svg" class="pull-right hidden-sm hidden-xs" style="padding-top:2%;" alt="Auckland War Memorial Museum Tāmaki Paenga Hira">
+            </a>
+            <h1 style="font-weight:600;" class="hidden-sm hidden-xs">Auckland Museum Collection Insights</h1>
+            <p class="lead hidden-sm hidden-xs">Discovering the stories hidden in our data.<br /><strong>Click the banner above to search by colour.</strong></p>
 
-<body>
-
-  <div class="wrapper">
-  <ul class="img-grid">
-    <li>
-      <a href="#" class="overlay-container" data-overlay-text="Beatles">
-        <img src="https://trungk18.github.io/img/image-grid/img-beatles.jpg" alt="Image capture goes here 01" class="overlay-img" />
-      </a>
-    </li>
-    <li>
-      <a href="#" class="overlay-container" data-overlay-text="Bonsai">
-        <img src="https://trungk18.github.io/img/image-grid/img-bonsai.jpg" alt="Image capture goes here 02" class="overlay-img" />
-      </a>
-    </li>
-    <li>
-      <a href="#" class="overlay-container" data-overlay-text="Bottles">
-        <img src="https://trungk18.github.io/img/image-grid/img-bottles.jpg" alt="Image capture goes here 03" class="overlay-img" />
-      </a>
-    </li>
-    <li>
-      <a href="#" class="overlay-container" data-overlay-text="Brunch">
-        <img src="https://trungk18.github.io/img/image-grid/img-brunch.jpg" alt="Image capture goes here 04" class="overlay-img" />
-      </a>
-    </li>
-    <li>
-      <a href="#" class="overlay-container" data-overlay-text="Ceramics">
-        <img src="https://trungk18.github.io/img/image-grid/img-ceramics.jpg" alt="Image capture goes here 05" class="overlay-img" />
-      </a>
-    </li>
-    <li>
-      <a href="#" class="overlay-container" data-overlay-text="Hammock">
-        <img src="https://trungk18.github.io/img/image-grid/img-hammock.jpg" alt="Image capture goes here 06" class="overlay-img" />
-      </a>
-    </li>
-    <li>
-      <a href="#" class="overlay-container" data-overlay-text="Hiking">
-        <img src="https://trungk18.github.io/img/image-grid/img-hiking.jpg" alt="Image capture goes here 07" class="overlay-img" />
-      </a>
-    </li>
-    <li>
-      <a href="#" class="overlay-container" data-overlay-text="Orchard">
-        <img src="https://trungk18.github.io/img/image-grid/img-orchard.jpg" alt="Image capture goes here 08" class="overlay-img" />
-      </a>
-    </li>
-    <li>
-      <a href="#" class="overlay-container" data-overlay-text="Cooking">
-        <img src="https://trungk18.github.io/img/image-grid/img-cooking.jpg" alt="Image capture goes here 09" class="overlay-img" />
-      </a>
-    </li>
-    <li>
-      <a href="#" class="overlay-container" data-overlay-text="School">
-        <img src="https://trungk18.github.io/img/image-grid/img-school.jpg" alt="Image capture goes here 10" class="overlay-img" />
-      </a>
-    </li>
-    <li>
-      <a href="#" class="overlay-container" data-overlay-text="Shoes">
-        <img src="https://trungk18.github.io/img/image-grid/img-shoes.jpg" alt="Image capture goes here 11" class="overlay-img" />
-      </a>
-    </li>
-    <li>
-      <a href="#" class="overlay-container" data-overlay-text="Flight">
-        <img src="https://trungk18.github.io/img/image-grid/img-flight.jpg" alt="Image capture goes here 12" class="overlay-img" />
-      </a>
-    </li>
-  </ul>
+            <!-- mobile -->
+            <a href="https://www.aucklandmuseum.com/collections" class="visible-xs-block visible-sm-block">
+                <img src="https://amcollections.github.io/AM_Logo.svg" alt="Auckland War Memorial Museum Tāmaki Paenga Hira" class="center-block" style="padding-top: 3%">
+            </a>
+            <h1 style="font-weight:600; text-align:center;" class="visible-xs-block visible-sm-block">Data Insights</h1>
+            <p class="lead visible-xs-block visible-sm-block" style="text-align:center;">Discovering stories in our data.</p>
+        </div>
+    </div>
+</div>
+<!-- colour bar -->
+  
+<div id="colour-bar">
+<ul>
+<a href="#red" class="redbox"></a>
+<a class="spacer"></a>
+<a href="#pink" class="pinkbox"></a>
+<a class="spacer"></a>
+<a href="#orange" class="orangebox"></a>
+<a class="spacer"></a>
+<a href="#yellow" class="yellowbox"></a>
+<a class="spacer"></a>
+<a href="#green"  class="greenbox"></a>
+<a class="spacer"></a>
+<a href="#blue" class="bluebox"></a>
+<a class="spacer"></a>
+<a href="#purple" class="purplebox"></a>
+<a class="spacer"></a>
+<a href="#brown" class="brownbox"></a>
+<a class="spacer"></a>
+<a href="#silver" class="silverbox"></a>
+<a class="spacer"></a>
+<a href="#grey" class="greybox"></a>
+<a class="spacer"></a>
+<a href="#black" class="blackbox"></a>
+<a class="spacer"></a>
+<a href="#white" class="whitebox"></a>
+</ul>
 </div>
   
   
+  
+  <div class="wrapper">
+  <ul class="img-grid">
+  <li>
+ <li id="black"><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-85886	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/615956?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-511	 "class="overlay-container" data-overlay-text="	handbag, woman's	"><img src="	http://api.aucklandmuseum.com/id/media/v/599620?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-12781	 "class="overlay-container" data-overlay-text="	handbag, woman's	"><img src="	http://api.aucklandmuseum.com/id/media/v/607887?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-102191	 "class="overlay-container" data-overlay-text="	bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/605480?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-5059	 "class="overlay-container" data-overlay-text="	bag, woman's	"><img src="	http://api.aucklandmuseum.com/id/media/v/598758?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-80422	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/615686?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-12782	 "class="overlay-container" data-overlay-text="	handbag, woman's	"><img src="	http://api.aucklandmuseum.com/id/media/v/612866?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-830546	 "class="overlay-container" data-overlay-text="	reticule	"><img src="	http://api.aucklandmuseum.com/id/media/v/627119?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-13335	 "class="overlay-container" data-overlay-text="	handbag, woman's	"><img src="	http://api.aucklandmuseum.com/id/media/v/610403?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-90161	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/615710?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-13159	 "class="overlay-container" data-overlay-text="	handbag, woman's	"><img src="	http://api.aucklandmuseum.com/id/media/v/613695?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-610559	 "class="overlay-container" data-overlay-text="	case, dressing	"><img src="	http://api.aucklandmuseum.com/id/media/v/624207?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-86096	 "class="overlay-container" data-overlay-text="	bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/617790?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-17144	 "class="overlay-container" data-overlay-text="	handbag	"><img src="	http://api.aucklandmuseum.com/id/media/v/607743?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-16378	 "class="overlay-container" data-overlay-text="	inro	"><img src="	http://api.aucklandmuseum.com/id/media/v/600693?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-593	 "class="overlay-container" data-overlay-text="	handbag, woman's	"><img src="	http://api.aucklandmuseum.com/id/media/v/612896?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-291	 "class="overlay-container" data-overlay-text="	handbag, women's	"><img src="	http://api.aucklandmuseum.com/id/media/v/613835?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-8693	 "class="overlay-container" data-overlay-text="	handbag, woman's	"><img src="	http://api.aucklandmuseum.com/id/media/v/612914?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-90165	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/599689?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-7724	 "class="overlay-container" data-overlay-text="	tidy	"><img src="	http://api.aucklandmuseum.com/id/media/v/612907?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li id="blue"><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-11153	 "class="overlay-container" data-overlay-text="	bag, hand	"><img src="	http://api.aucklandmuseum.com/id/media/v/627093?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-635123	 "class="overlay-container" data-overlay-text="	bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/609092?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-80409	 "class="overlay-container" data-overlay-text="	handbag	"><img src="	http://api.aucklandmuseum.com/id/media/v/605519?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-65622	 "class="overlay-container" data-overlay-text="	bag, shoulder	"><img src="	http://api.aucklandmuseum.com/id/media/v/605503?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-8735	 "class="overlay-container" data-overlay-text="	purses, woman's	"><img src="	http://api.aucklandmuseum.com/id/media/v/601498?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-80420	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/615675?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-63887	 "class="overlay-container" data-overlay-text="	pouch, stocking	"><img src="	http://api.aucklandmuseum.com/id/media/v/614620?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-3855	 "class="overlay-container" data-overlay-text="	handbag, lady's	"><img src="	http://api.aucklandmuseum.com/id/media/v/600700?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-80396	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/599654?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-11107	 "class="overlay-container" data-overlay-text="	handbag, lady's	"><img src="	http://api.aucklandmuseum.com/id/media/v/613685?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-37653	 "class="overlay-container" data-overlay-text="	brocade bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/601473?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-62546	 "class="overlay-container" data-overlay-text="	purse	"><img src="	http://api.aucklandmuseum.com/id/media/v/598780?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-6690	 "class="overlay-container" data-overlay-text="	handbag	"><img src="	http://api.aucklandmuseum.com/id/media/v/607766?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-18356	 "class="overlay-container" data-overlay-text="	purse, miser's	"><img src="	http://api.aucklandmuseum.com/id/media/v/621921?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-7148	 "class="overlay-container" data-overlay-text="	handbag	"><img src="	http://api.aucklandmuseum.com/id/media/v/601492?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-19511	 "class="overlay-container" data-overlay-text="	purse, women's	"><img src="	http://api.aucklandmuseum.com/id/media/v/601446?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-19333	 "class="overlay-container" data-overlay-text="	handbag, three	"><img src="	http://api.aucklandmuseum.com/id/media/v/601428?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-3854	 "class="overlay-container" data-overlay-text="	handbag, lady's	"><img src="	http://api.aucklandmuseum.com/id/media/v/613842?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-18233	 "class="overlay-container" data-overlay-text="	handbag	"><img src="	http://api.aucklandmuseum.com/id/media/v/607750?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-10078	 "class="overlay-container" data-overlay-text="	bag, tsuba	"><img src="	http://api.aucklandmuseum.com/id/media/v/450883?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-9982	 "class="overlay-container" data-overlay-text="	bag, assembled from rank badge	"><img src="	http://api.aucklandmuseum.com/id/media/v/613748?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-95997	 "class="overlay-container" data-overlay-text="	handbag	"><img src="	http://api.aucklandmuseum.com/id/media/v/612922?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-11198	 "class="overlay-container" data-overlay-text="	bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/609699?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-7879	 "class="overlay-container" data-overlay-text="	pipe holder, and pouch	"><img src="	http://api.aucklandmuseum.com/id/media/v/600723?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-785038	 "class="overlay-container" data-overlay-text="	handbag	"><img src="	http://api.aucklandmuseum.com/id/media/v/607800?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-3412	 "class="overlay-container" data-overlay-text="	bag, women's	"><img src="	http://api.aucklandmuseum.com/id/media/v/601873?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-10580	 "class="overlay-container" data-overlay-text="	chatelaine	"><img src="	http://api.aucklandmuseum.com/id/media/v/611652?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li id="brown"><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-19712	 "class="overlay-container" data-overlay-text="	chatelaine	"><img src="	http://api.aucklandmuseum.com/id/media/v/611732?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-18379	 "class="overlay-container" data-overlay-text="	case	"><img src="	http://api.aucklandmuseum.com/id/media/v/617856?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-7967	 "class="overlay-container" data-overlay-text="	chatelaine	"><img src="	http://api.aucklandmuseum.com/id/media/v/611784?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-80384	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/615668?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-662098	 "class="overlay-container" data-overlay-text="	haversack	"><img src="	http://api.aucklandmuseum.com/id/media/v/625716?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-37548	 "class="overlay-container" data-overlay-text="	sewing pouch	"><img src="	http://api.aucklandmuseum.com/id/media/v/601462?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-17114	 "class="overlay-container" data-overlay-text="	chatelaine	"><img src="	http://api.aucklandmuseum.com/id/media/v/611704?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-85910	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/599662?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-63867	 "class="overlay-container" data-overlay-text="	handbag	"><img src="	http://api.aucklandmuseum.com/id/media/v/604823?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-85891	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/601082?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-85898	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/621898?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-37347	 "class="overlay-container" data-overlay-text="	purse, woman's	"><img src="	http://api.aucklandmuseum.com/id/media/v/601294?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-80382	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/601075?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-65105	 "class="overlay-container" data-overlay-text="	pocket, crochet	"><img src="	http://api.aucklandmuseum.com/id/media/v/609732?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-95995	 "class="overlay-container" data-overlay-text="	handbag	"><img src="	http://api.aucklandmuseum.com/id/media/v/598823?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-9401	 "class="overlay-container" data-overlay-text="	purse	"><img src="	http://api.aucklandmuseum.com/id/media/v/609099?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-60830	 "class="overlay-container" data-overlay-text="	bag, paper	"><img src="	http://api.aucklandmuseum.com/id/media/v/613738?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-1077	 "class="overlay-container" data-overlay-text="	purse, woman's	"><img src="	http://api.aucklandmuseum.com/id/media/v/613674?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-85901	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/601109?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-826897	 "class="overlay-container" data-overlay-text="	evening purse	"><img src="	http://api.aucklandmuseum.com/id/media/v/598807?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-18841	 "class="overlay-container" data-overlay-text="	purse, miser's	"><img src="	http://api.aucklandmuseum.com/id/media/v/621928?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-15328	 "class="overlay-container" data-overlay-text="	pipe, pipe holder and pouch	"><img src="	http://api.aucklandmuseum.com/id/media/v/614594?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-10350	 "class="overlay-container" data-overlay-text="	inro and netsuke	"><img src="	http://api.aucklandmuseum.com/id/media/v/600686?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-19210	 "class="overlay-container" data-overlay-text="	saddle-bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/617882?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-15044	 "class="overlay-container" data-overlay-text="	inro, netsuke and ojime	"><img src="	http://api.aucklandmuseum.com/id/media/v/600655?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-95996	 "class="overlay-container" data-overlay-text="	handbag	"><img src="	http://api.aucklandmuseum.com/id/media/v/607861?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-17621	 "class="overlay-container" data-overlay-text="	saddle-bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/617848?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-18530	 "class="overlay-container" data-overlay-text="	handbag	"><img src="	http://api.aucklandmuseum.com/id/media/v/613709?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-3463	 "class="overlay-container" data-overlay-text="	chatelaine	"><img src="	http://api.aucklandmuseum.com/id/media/v/613835?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-4430	 "class="overlay-container" data-overlay-text="	saddle bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/617889?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-37345	 "class="overlay-container" data-overlay-text="	handbag, woman's	"><img src="	http://api.aucklandmuseum.com/id/media/v/601281?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-740934	 "class="overlay-container" data-overlay-text="	sporran	"><img src="	http://api.aucklandmuseum.com/id/media/v/624228?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-7722	 "class="overlay-container" data-overlay-text="	bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/609746?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-10394	 "class="overlay-container" data-overlay-text="	bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/614587?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-536302	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/615658?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-37650	 "class="overlay-container" data-overlay-text="	pouch, stocking	"><img src="	http://api.aucklandmuseum.com/id/media/v/601310?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-19068	 "class="overlay-container" data-overlay-text="	handbag	"><img src="	http://api.aucklandmuseum.com/id/media/v/609721?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-95787	 "class="overlay-container" data-overlay-text="	purse	"><img src="	http://api.aucklandmuseum.com/id/media/v/610450?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-556725	 "class="overlay-container" data-overlay-text="	bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/613730?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-605142	 "class="overlay-container" data-overlay-text="	satchel	"><img src="	http://api.aucklandmuseum.com/id/media/v/670366?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-592457	 "class="overlay-container" data-overlay-text="	purse	"><img src="	http://api.aucklandmuseum.com/id/media/v/599635?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-10630	 "class="overlay-container" data-overlay-text="	brush and ink holder	"><img src="	http://api.aucklandmuseum.com/id/media/v/609052?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-10320	 "class="overlay-container" data-overlay-text="	purse, woman's	"><img src="	http://api.aucklandmuseum.com/id/media/v/607877?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-55567	 "class="overlay-container" data-overlay-text="	paper bag and buttons	"><img src="	http://api.aucklandmuseum.com/id/media/v/629094?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-15270	 "class="overlay-container" data-overlay-text="	saddle-bag, double	"><img src="	http://api.aucklandmuseum.com/id/media/v/617838?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-14738	 "class="overlay-container" data-overlay-text="	pipe holder and pipe (smoking)	"><img src="	http://api.aucklandmuseum.com/id/media/v/610413?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-8891	 "class="overlay-container" data-overlay-text="	purse	"><img src="	http://api.aucklandmuseum.com/id/media/v/610444?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-37738	 "class="overlay-container" data-overlay-text="	purse	"><img src="	http://api.aucklandmuseum.com/id/media/v/598744?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-6789	 "class="overlay-container" data-overlay-text="	purse, miser's	"><img src="	http://api.aucklandmuseum.com/id/media/v/612902?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-64991	 "class="overlay-container" data-overlay-text="	kit, sewing	"><img src="	http://api.aucklandmuseum.com/id/media/v/627115?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-11782	 "class="overlay-container" data-overlay-text="	purse	"><img src="	http://api.aucklandmuseum.com/id/media/v/609703?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-820202	 "class="overlay-container" data-overlay-text="	handbag	"><img src="	http://api.aucklandmuseum.com/id/media/v/600676?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-62599	 "class="overlay-container" data-overlay-text="	purse	"><img src="	http://api.aucklandmuseum.com/id/media/v/598796?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-15510	 "class="overlay-container" data-overlay-text="	purse	"><img src="	http://api.aucklandmuseum.com/id/media/v/607894?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-37648	 "class="overlay-container" data-overlay-text="	bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/601468?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-15045	 "class="overlay-container" data-overlay-text="	inro, bead and netsuke	"><img src="	http://api.aucklandmuseum.com/id/media/v/600668?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li id="silver"><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-10920	 "class="overlay-container" data-overlay-text="	purse	"><img src="	http://api.aucklandmuseum.com/id/media/v/609060?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-58278	 "class="overlay-container" data-overlay-text="	sovereign case	"><img src="	http://api.aucklandmuseum.com/id/media/v/619140?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-58272	 "class="overlay-container" data-overlay-text="	sovereign case	"><img src="	http://api.aucklandmuseum.com/id/media/v/630446?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-7303	 "class="overlay-container" data-overlay-text="	case, needle	"><img src="	http://api.aucklandmuseum.com/id/media/v/617738?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-102075	 "class="overlay-container" data-overlay-text="	bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/605474?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-90169	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/615723?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li id="green"><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-37654	 "class="overlay-container" data-overlay-text="	bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/610441?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-90175	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/615733?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-11192	 "class="overlay-container" data-overlay-text="	chatelaine	"><img src="	http://api.aucklandmuseum.com/id/media/v/601859?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-6108	 "class="overlay-container" data-overlay-text="	bag, beach	"><img src="	http://api.aucklandmuseum.com/id/media/v/621945?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-80383	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/615664?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-90149	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/615692?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-67210	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/599648?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-90173	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/615728?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-769205	 "class="overlay-container" data-overlay-text="	backpack	"><img src="	http://api.aucklandmuseum.com/id/media/v/625741?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-512064	 "class="overlay-container" data-overlay-text="	bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/601329?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-8739	 "class="overlay-container" data-overlay-text="	handbag	"><img src="	http://api.aucklandmuseum.com/id/media/v/607843?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-68158	 "class="overlay-container" data-overlay-text="	watch pocket	"><img src="	http://api.aucklandmuseum.com/id/media/v/601884?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-58273	 "class="overlay-container" data-overlay-text="	sovereign case	"><img src="	http://api.aucklandmuseum.com/id/media/v/619132?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-37530	 "class="overlay-container" data-overlay-text="	handbag	"><img src="	http://api.aucklandmuseum.com/id/media/v/601301?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-85904	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/599657?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-3815	 "class="overlay-container" data-overlay-text="	chatelaine	"><img src="	http://api.aucklandmuseum.com/id/media/v/611772?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li id="orange"><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-3623	 "class="overlay-container" data-overlay-text="	purse, woman's	"><img src="	http://api.aucklandmuseum.com/id/media/v/613718?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-90166	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/598818?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-85894	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/601089?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-14345	 "class="overlay-container" data-overlay-text="	bag, tsuba	"><img src="	http://api.aucklandmuseum.com/id/media/v/609065?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-7643	 "class="overlay-container" data-overlay-text="	purse, woman's	"><img src="	http://api.aucklandmuseum.com/id/media/v/605509?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-37658	 "class="overlay-container" data-overlay-text="	evening dress and purse	"><img src="	http://api.aucklandmuseum.com/id/media/v/596697?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li id="purple"><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-15763	 "class="overlay-container" data-overlay-text="	handbag, lady's	"><img src="	http://api.aucklandmuseum.com/id/media/v/612876?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-85907	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/601120?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-85899	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/601098?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li id="pink"><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-668947	 "class="overlay-container" data-overlay-text="	outfit	"><img src="	http://api.aucklandmuseum.com/id/media/v/596702?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-6298	 "class="overlay-container" data-overlay-text="	handbag	"><img src="	http://api.aucklandmuseum.com/id/media/v/604815?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-62548	 "class="overlay-container" data-overlay-text="	purse	"><img src="	http://api.aucklandmuseum.com/id/media/v/598791?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-5756	 "class="overlay-container" data-overlay-text="	handbag, woman's	"><img src="	http://api.aucklandmuseum.com/id/media/v/609084?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li id="red"><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-9651	 "class="overlay-container" data-overlay-text="	purse	"><img src="	http://api.aucklandmuseum.com/id/media/v/607870?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-748237	 "class="overlay-container" data-overlay-text="	handbag	"><img src="	http://api.aucklandmuseum.com/id/media/v/613860?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-619583	 "class="overlay-container" data-overlay-text="	brief case	"><img src="	http://api.aucklandmuseum.com/id/media/v/625620?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-80410	 "class="overlay-container" data-overlay-text="	bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/605526?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-16315	 "class="overlay-container" data-overlay-text="	handbag, woman's	"><img src="	http://api.aucklandmuseum.com/id/media/v/604789?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-635071	 "class="overlay-container" data-overlay-text="	bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/607757?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-19169	 "class="overlay-container" data-overlay-text="	purse	"><img src="	http://api.aucklandmuseum.com/id/media/v/613715?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-19660	 "class="overlay-container" data-overlay-text="	handbag	"><img src="	http://api.aucklandmuseum.com/id/media/v/601451?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-95981	 "class="overlay-container" data-overlay-text="	handbag	"><img src="	http://api.aucklandmuseum.com/id/media/v/613742?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-95994	 "class="overlay-container" data-overlay-text="	purse	"><img src="	http://api.aucklandmuseum.com/id/media/v/607851?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-19038	 "class="overlay-container" data-overlay-text="	emery, scissors and pouch	"><img src="	http://api.aucklandmuseum.com/id/media/v/610425?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-62407	 "class="overlay-container" data-overlay-text="	bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/601879?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-5775	 "class="overlay-container" data-overlay-text="	bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/609726?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-16540	 "class="overlay-container" data-overlay-text="	bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/604796?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-16818	 "class="overlay-container" data-overlay-text="	purse, woman's	"><img src="	http://api.aucklandmuseum.com/id/media/v/613827?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li id="grey"><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-90164	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/670344?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-7579	 "class="overlay-container" data-overlay-text="	purse, women's	"><img src="	http://api.aucklandmuseum.com/id/media/v/607837?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-19601	 "class="overlay-container" data-overlay-text="	sovereign case	"><img src="	http://api.aucklandmuseum.com/id/media/v/619125?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-58271	 "class="overlay-container" data-overlay-text="	case, sovereign	"><img src="	http://api.aucklandmuseum.com/id/media/v/628340?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-85903	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/601115?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-90159	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/599678?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-19599	 "class="overlay-container" data-overlay-text="	sovereign case	"><img src="	http://api.aucklandmuseum.com/id/media/v/619116?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li id="yellow"><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-7723	 "class="overlay-container" data-overlay-text="	bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/609750?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-102198	 "class="overlay-container" data-overlay-text="	handbag	"><img src="	http://api.aucklandmuseum.com/id/media/v/621911?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-85900	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/601105?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-785039	 "class="overlay-container" data-overlay-text="	handbag and purse	"><img src="	http://api.aucklandmuseum.com/id/media/v/607810?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-2213	 "class="overlay-container" data-overlay-text="	bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/610438?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-90157	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/599672?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-91307	 "class="overlay-container" data-overlay-text="	bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/600741?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-102199	 "class="overlay-container" data-overlay-text="	handbag	"><img src="	http://api.aucklandmuseum.com/id/media/v/621916?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-90160	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/615705?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-748215	 "class="overlay-container" data-overlay-text="	Bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/601065?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-90158	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/615698?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-15682	 "class="overlay-container" data-overlay-text="	bag, shoe	"><img src="	http://api.aucklandmuseum.com/id/media/v/612871?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-80421	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/615680?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-12350	 "class="overlay-container" data-overlay-text="	chatelaine	"><img src="	http://api.aucklandmuseum.com/id/media/v/611668?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-14380	 "class="overlay-container" data-overlay-text="	bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/607821?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-796676	 "class="overlay-container" data-overlay-text="	skirt and matching bag	"><img src="	http://api.aucklandmuseum.com/id/media/v/596741?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-85909	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/601127?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-14494	 "class="overlay-container" data-overlay-text="	chatelaine	"><img src="	http://api.aucklandmuseum.com/id/media/v/611678?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-18532	 "class="overlay-container" data-overlay-text="	purse, coin	"><img src="	http://api.aucklandmuseum.com/id/media/v/601868?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-62547	 "class="overlay-container" data-overlay-text="	purse	"><img src="	http://api.aucklandmuseum.com/id/media/v/598785?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-536330	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/615946?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-500634	 "class="overlay-container" data-overlay-text="	handbag, women's	"><img src="	http://api.aucklandmuseum.com/id/media/v/601322?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-85895	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/601095?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-12147	 "class="overlay-container" data-overlay-text="	purse	"><img src="	http://api.aucklandmuseum.com/id/media/v/605486?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-85908	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/621908?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-779367	 "class="overlay-container" data-overlay-text="	t-shirt, knitted	"><img src="	http://api.aucklandmuseum.com/id/media/v/596736?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-37652	 "class="overlay-container" data-overlay-text="	bag, cosmetic	"><img src="	http://api.aucklandmuseum.com/id/media/v/601315?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-18627	 "class="overlay-container" data-overlay-text="	purse	"><img src="	http://api.aucklandmuseum.com/id/media/v/612888?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+<li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-19260	 "class="overlay-container" data-overlay-text="	handbag, women's	"><img src="	http://api.aucklandmuseum.com/id/media/v/607828?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
+ <li><a href=" 	http://www.aucklandmuseum.com/collections-research/collections/record/am_humanhistory-object-90162	 "class="overlay-container" data-overlay-text="	bag, shopping	"><img src="	http://api.aucklandmuseum.com/id/media/v/615716?rendering=standard.jpg	"alt= "caption "class="overlay-img" /></a></li>
 
 </body>
 
