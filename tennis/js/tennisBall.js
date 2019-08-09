@@ -66,7 +66,7 @@ class TennisBall {
     //  Set your prefered colours here
     ctx.lineWidth = 3
     ctx.strokeStyle = 'rgb(255, 255, 255)'
-    ctx.fillStyle = 'rgba(0, 255, 0, 0.3)'
+    ctx.fillStyle = 'rgb(201, 243, 100)'
 
     //  Drawing the ball
     ctx.beginPath()
