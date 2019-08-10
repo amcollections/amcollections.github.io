@@ -36,28 +36,7 @@
   }
 }
 
-/* Beta tag in left-hand corner */
-@media (min-width: 1380px) {
-  /* Beta tag */
-  body:after {
-    content: "beta";
-    position: fixed;
-    width: 255px;
-    height: 40px;
-    background: #EE8E4A;
-    top: 40px;
-    left: -60px;
-    text-align: center;
-    font-size: 40px;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #fff;
-    line-height: 42px;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-}
+
 
 /* Desktops */
 @media (min-width: 1280px) {
