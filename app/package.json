@@ -1,0 +1,21 @@
+{
+  "name": "send-this-to-your-lover",
+  "version": "0.0.1",
+  "description": "A very romantic website (but it's not for you, it's for your lover)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
