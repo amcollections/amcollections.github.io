@@ -1,0 +1,144 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Auckland Museum Labs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet prefetch"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <!-- Mobile message -->
+  <div
+    class="container visible-xs-block visible-sm-block"
+    style="padding-top:5%"
+  >
+    <div class="alert alert-warning alert-dismissible">
+      <button
+        type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <p><strong>Kia ora!</strong> This project is in beta.</p>
+      <p>
+        Graphs will look better if you turn your phone sideways, and some
+        graphswill only work on bigger screens for now.
+      </p>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <div class="container">
+    <div class="row header">
+      <div class="col-sm-12 clearfix page-header">
+        <!-- desktop -->
+        <a
+          href="https://www.aucklandmuseum.com/collections"
+          class="hidden-sm hidden-xs"
+        >
+          <img
+            src="https://amcollections.github.io/AM_Logo.svg"
+            class="pull-right hidden-sm hidden-xs"
+            style="padding-top:2%;"
+            alt="Auckland War Memorial Museum Tāmaki Paenga Hira"
+          />
+        </a>
+        <h1 style="font-weight:600;" class="hidden-sm hidden-xs">
+          Auckland Museum Labs
+        </h1>
+        <p class="lead hidden-sm hidden-xs">
+          Discovering the stories hidden in our data.
+        </p>
+
+        <!-- mobile -->
+        <a
+          href="https://www.aucklandmuseum.com/collections"
+          class="visible-xs-block visible-sm-block"
+        >
+          <img
+            src="https://amcollections.github.io/AM_Logo.svg"
+            alt="Auckland War Memorial Museum Tāmaki Paenga Hira"
+            class="center-block"
+            style="padding-top: 3%"
+          />
+        </a>
+        <h1
+          style="font-weight:600; text-align:center;"
+          class="visible-xs-block visible-sm-block"
+        >Labs
+        </h1>
+        <p
+          class="lead visible-xs-block visible-sm-block"
+          style="text-align:center;"
+        >
+          Discovering stories in our data.
+        </p>
+      </div>
+    </div>
+  </div>
+  <body>
+    <main role="main" class="container">
+      <h1>Explore the Collection via Colour <span id="rainbow"></span></h1>
+      <form>
+        <label for="collections">Choose a collection:</label>
+        <select class="form-control" id="collections">
+          <option name="" value="">---</option>
+          <option
+            name="Auckland Museum"
+            value="https://raw.githubusercontent.com/AucklandMuseum/api_monkey/master/test.json"
+            >Paintings</option>
+          <option
+            name="Birds"
+            value="https://raw.githubusercontent.com/AucklandMuseum/api_monkey/master/LB.json"
+            >Birds</option>
+          <option
+            name="Ephemera"
+            value="https://raw.githubusercontent.com/AucklandMuseum/api_monkey/master/eph.json"
+            >Ephemera</option>
+          <option
+            name="Applied Arts"
+            value="https://raw.githubusercontent.com/AucklandMuseum/api_monkey/master/AA.json"
+            >Applied Arts and Design</option>
+
+        </select>
+        <section id="browse"></section>
+      </form>
+
+      <section id="colors"></section>
+      <section id="description">
+        <p>
+          <strong>Click on a block of colors to view the source image.</strong>
+          Each string of swatches represents an image in the selected
+          collection.
+        </p>
+      </section>
+    </main>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script
+      src="https://code.jquery.com/jquery-2.2.1.min.js"
+      integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+      integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+      integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/client.js"></script>
+  </body>
+</html>
